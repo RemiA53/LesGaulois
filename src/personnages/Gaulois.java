@@ -24,7 +24,14 @@ public class Gaulois {
 	private String prendreParole() {
 		return "Le gaulois " + nom + " : ";
 	}
-
+	
+	public void frapper(Romain romain) {
+		System.out.println(nom + "envoie un grand coup dans la machoire de" + romain.getNom());	
+		romain.recevoirCoup(force/3);
+	}
+	
+	
+	
 	@Override
 	public String toString() {
 		return nom;
@@ -51,5 +58,9 @@ public class Romain {
 
 	private String prendreParole() {
 		return "Le romain " + nom + " : ";
+	}
+	
+	public 	void recevoirCoup(forceCoup) {
+		this.force = force - forceCoup
 	}
 }
