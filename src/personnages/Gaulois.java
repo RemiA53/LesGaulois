@@ -1,3 +1,4 @@
+package personnages;
 
 public class Gaulois {
 	private String nom;
@@ -19,7 +20,6 @@ public class Gaulois {
 	private String prendreParole() {
 		return "Le gaulois " + nom + " : ";
 	}
-
 }
 
 public class Romain {
